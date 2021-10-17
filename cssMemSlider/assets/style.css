@@ -78,6 +78,7 @@ html {
   display: inline-block;
   border-width: 2px;
   border-color: var(--color-bullets);
+  transition: var(--transition-settings);
 }
 
 .bullets .dot_area {
@@ -89,7 +90,6 @@ html {
   -webkit-filter: saturate(0%) brightness(140%) contrast(87%);
 }
 
-/* ---captions--- */
 .caption li {
   padding-left: 0;
 
@@ -119,7 +119,6 @@ html {
   padding-left: 3rem;
 }
 
-/* ---hide images--- */
 #slide-1:checked ~ .slides_wrapper .carousel li.slide-1 ~ li,
 #slide-2:checked ~ .slides_wrapper .carousel li.slide-2 ~ li,
 #slide-3:checked ~ .slides_wrapper .carousel li.slide-3 ~ li,
@@ -127,7 +126,6 @@ html {
   transform: translateX(100%);
 }
 
-/* ---hide caption--- */
 #slide-1:checked ~ .under_img .caption li:not(.slide-1),
 #slide-2:checked ~ .under_img .caption li:not(.slide-2),
 #slide-3:checked ~ .under_img .caption li:not(.slide-3),
@@ -135,8 +133,6 @@ html {
   display: none;
 }
 
-
-/* ---switch bullet hole--- */
 #slide-1:checked ~ .under_img .bullets li:nth-child(1) .dot,
 #slide-2:checked ~ .under_img .bullets li:nth-child(2) .dot,
 #slide-3:checked ~ .under_img .bullets li:nth-child(3) .dot,
