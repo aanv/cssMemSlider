@@ -4,9 +4,10 @@
   --color-background: #25282A;
   --color-bullets: #71ABFF;
   --color-text: #FFFFFF;
-  --padding: 10px;
+  --padding: 1.2rem 0.4rem;
   --bullet-size: 17px;
   --transition-settings: all 0.4s ease-in-out;
+  --carousel-height: 20rem;
 }
 
 html {
@@ -31,12 +32,13 @@ html {
 
 .carousel .slide img {
   width: 100%;
-  height: 35vw;
+  height: var(--carousel-height);
   object-fit: cover;
 }
 
 .carousel {
  display: grid;
+ height: var(--carousel-height);
  grid-template-areas: "a";
 }
 
@@ -60,14 +62,14 @@ html {
   display: inline-block;
 }
 
-/* ------------------captions------------------------- */
-
 .wrapper .under_img .caption {
   padding: var(--padding);
   display: inline-block;
   width: 20rem;
   line-height: 1.1rem;
 }
+
+/* ------------------captions------------------------- */
 
 .caption li {
   padding-left: 0;
@@ -80,7 +82,7 @@ html {
 
 @keyframes slide {
   from {
-    transform: translateX(70%);
+    transform: translateX(60%);
   }
 
   to {
@@ -136,4 +138,29 @@ html {
 #slide-3:checked ~ .under_img .bullets li:nth-child(3) .dot,
 #slide-4:checked ~ .under_img .bullets li:nth-child(4) .dot {
   background-color: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --bullet-size: 10px;
+    --carousel-height: 18rem;
+  }
+
+  html {
+    font-size: 20px;
+  }
+
+  .wrapper .under_img {
+    flex-direction: column;
+    object-fit: cover;
+  }
+
+  .wrapper .under_img .caption {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .wrapper .under_img .bullets {
+    align-self: center;
+  }
 }
