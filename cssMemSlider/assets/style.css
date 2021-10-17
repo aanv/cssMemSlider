@@ -143,7 +143,12 @@ html {
 @media screen and (max-width: 1600px) {
   :root {
     --bullet-size: 13px;
-    --carousel-height: 17rem;
+    --carousel-height: 15.5rem;
+  }
+
+  .wrapper {
+    width: 96%;
+    padding: 2%;
   }
 }
 
