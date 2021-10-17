@@ -7,7 +7,7 @@
   --padding: 1.2rem 0.4rem;
   --bullet-size: 17px;
   --transition-settings: all 0.4s ease-in-out;
-  --carousel-height: 70vh;
+  --carousel-height: 65vh;
 }
 
 html {
@@ -123,7 +123,7 @@ html {
 #slide-2:checked ~ .slides_wrapper .carousel li.slide-2 ~ li,
 #slide-3:checked ~ .slides_wrapper .carousel li.slide-3 ~ li,
 #slide-4:checked ~ .slides_wrapper .carousel li.slide-4 ~ li {
-  transform: translateX(100%);
+  transform: translateX(110%);
 }
 
 #slide-1:checked ~ .under_img .caption li:not(.slide-1),
