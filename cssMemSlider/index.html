@@ -7,6 +7,46 @@
   <title>Document</title>
 </head>
 <body>
+  <div class="wrapper">
+    <input class="carousel-input" type="radio" id="slide-1" name="slides" aria-hidden="true" hidden="" checked="checked">
+    <input class="carousel-input" type="radio" id="slide-2" name="slides" aria-hidden="true" hidden="">
+
+    <div class="slides_wrapper">
+      <ol class="carousel">
+        <li class="slide slide-1">
+          <img src="./assets/img/1.jpeg" alt="slide-1" />
+        </li>
+        <li class="slide slide-2">
+          <img src="./assets/img/2.jpeg" alt="slide-1" />
+        </li>
+      </ol>
+    </div>
+
+    <div class="under_img">
+
+      <ol class="bullets">
+        <li>
+          <label for="slide-1">
+            <div class="dot_area">
+              <span class="dot"></span>
+            </div>
+          </label>
+        </li><li>
+          <label for="slide-2">
+            <div class="dot_area">
+              <span class="dot"></span>
+            </div>
+          </label>
+        </li>
+      </ol>
   
+      <ol class="caption">
+        <li class="slide-1"><p>test text #1</p></li>
+        <li class="slide-2"><p>test text #2</p></li>
+      </ol>
+
+    </div>
+
+  </div>
 </body>
 </html>

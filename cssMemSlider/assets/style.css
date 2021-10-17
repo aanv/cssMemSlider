@@ -1,0 +1,7 @@
+@import "reset.css";
+
+:root {
+  --color-background: #25282A;
+  --color-bullets: #71ABFF;
+  --color-text: #FFFFFF;
+}
