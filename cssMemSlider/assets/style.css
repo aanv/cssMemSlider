@@ -83,7 +83,32 @@ html {
   display: inline-block;
 }
 
+/* ------------------captions------------------------- */
 
+.wrapper .under_img .caption {
+  padding: var(--padding);
+  display: inline-block;
+  width: 500px;
+}
+
+.caption li {
+  padding-left: 0px;
+
+  animation-duration: 0.4s;
+  animation-name: slide;
+
+  transition: var(--transition-settings);
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
 
 
 
@@ -159,13 +184,13 @@ html {
 }
 
 
-#slide-1:checked ~ .under_img .caption li.slide-2 span {
+#slide-1:checked ~ .under_img .caption li.slide-2 pre {
   display: none;
   transform: translateX(30%);
   /* padding-left: 100px; */
 }
 
-#slide-2:checked ~ .under_img .caption li.slide-1 span {
+#slide-2:checked ~ .under_img .caption li.slide-1 pre {
   display: none;
   transform: translateX(30%);
 }
